@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+  />
+  <title>NiñoTelesio</title>
+
+  <!-- Fonts & Icons -->
+   <link rel="icon" type="image/png" href="images/head.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/style/styles.css" />
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12"></circle>
+      </svg>
+    </div>
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4"></circle>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator"></div>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">NT</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+      <!-- Kept for markup parity but hidden via CSS to preserve desktop layout on mobile -->
+      <div class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="stars"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>Hi, I'm Niño</h2>
+            <h1>Frontend developer.</h1>
+            <p>
+              Crafting beautiful, responsive web experiences with modern
+              technologies like React, Vue, and TypeScript to bring your
+              digital vision to life.
+            </p>
+            <div class="cta-buttons">
+              <a
+                href="mailto:veloradigitalservices@gmail.com"
+                class="btn btn-primary"
+                >Contact Me</a
+              >
+              <a href="#projects" class="btn btn-secondary">View Portfolio</a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <div class="hero-image-container">
+              <img
+                src="./images/head.png"
+                alt="Professional portrait of Niño Telesio, frontend developer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Companies / Title Row -->
+    <section class="companies animate-on-scroll">
+      <div class="container">
+        <h3><b>Example Projects</b></h3>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <!-- Wedding Website -->
+        <div class="project animate-on-scroll">
+          <div class="project-content">
+            <h3>Wedding Website</h3>
+            <ul class="project-features">
+              <li>Elegant and romantic design tailored for couples</li>
+              <li>Responsive layout optimized for all devices</li>
+              <li>Event details, RSVP form, and interactive guestbook</li>
+              <li>Photo gallery to showcase memories and love story</li>
+            </ul>
+            <div class="cta-buttons">
+              <a
+                href="mailto:veloradigitalservices@gmail.com"
+                class="btn btn-primary"
+                >Contact Me</a
+              >
+              <a
+                href="https://tugissec.github.io/weddingwebsite/index.html"
+                class="btn btn-secondary"
+                >View Project →</a
+              >
+            </div>
+          </div>
+          <div class="project-image">
+            <div class="project-image-container">
+              <img
+                src="./images/mock1.jpg"
+                alt="Screenshot of Wedding Website project"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Travel Website -->
+        <div class="project animate-on-scroll">
+          <div class="project-content">
+            <h3>Travel Website</h3>
+            <ul class="project-features">
+              <li>Dynamic destination pages with stunning visuals</li>
+              <li>Interactive itinerary planner for customizing trips</li>
+              <li>Responsive design for seamless browsing</li>
+              <li>Integrated booking system with secure payment</li>
+              <li>Optimized for fast performance and smooth UX</li>
+            </ul>
+            <div class="cta-buttons">
+              <a
+                href="mailto:veloradigitalservices@gmail.com"
+                class="btn btn-primary"
+                >Contact Me</a
+              >
+              <a
+                href="https://tugissec.github.io/travelwebsite/"
+                class="btn btn-secondary"
+                >View Project →</a
+              >
+            </div>
+          </div>
+          <div class="project-image">
+            <div class="project-image-container">
+              <img
+                src="./images/UP.png"
+                alt="Screenshot of Travel Website project"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Restaurant Website -->
+        <div class="project animate-on-scroll">
+          <div class="project-content">
+            <h3>Restaurant Website</h3>
+            <ul class="project-features">
+              <li>Elegant homepage with hero section</li>
+              <li>Interactive online menu with categories</li>
+              <li>Table reservation system with email notifications</li>
+              <li>Event and promotions section for special occasions</li>
+              <li>Fully responsive design for all devices</li>
+            </ul>
+            <div class="cta-buttons">
+              <a
+                href="mailto:veloradigitalservices@gmail.com"
+                class="btn btn-primary"
+                >Contact Me</a
+              >
+              <a
+                href="https://tugissec.github.io/restaurant-website/"
+                class="btn btn-secondary"
+                >View Project →</a
+              >
+            </div>
+          </div>
+          <div class="project-image">
+            <div class="project-image-container">
+              <img
+                src="./images/resto.png"
+                alt="Screenshot of Restaurant Website project"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+      <div class="container">
+        <h2 class="animate-on-scroll">What I Do</h2>
+
+        <div class="gallery-grid">
+          <div class="gallery-item animate-on-scroll">
+            <img src="./images/landing.jpg" alt="Web Landing Pages" />
+            <div class="overlay"><span>Web Landing Pages</span></div>
+          </div>
+
+          <div class="gallery-item animate-on-scroll">
+            <img src="./images/seo.jpg" alt="SEO Services" />
+            <div class="overlay">
+              <span>SEO - Search Engine Optimization</span>
+            </div>
+          </div>
+
+          <div class="gallery-item animate-on-scroll">
+            <img src="./images/UX.jpg" alt="UI/UX Design" />
+            <div class="overlay"><span>UI/UX Design</span></div>
+          </div>
+
+          <div class="gallery-item animate-on-scroll">
+            <img src="./images/dev.jpg" alt="Development" />
+            <div class="overlay"><span>Development</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="about" class="services">
+      <div class="container">
+        <h2 class="animate-on-scroll">Process is Everything</h2>
+        <p class="animate-on-scroll">
+          Simple, clear steps to get your project from idea to launch.
+        </p>
+
+        <div class="services-grid">
+          <!-- Step 1 -->
+          <div class="service-card animate-on-scroll slide-right">
+            <div class="card-header">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path
+                    d="M3 2l8.5 8.5L6.9 11.1 9.8 20l2.4-.9-2.3-6.6 4.7-1.3L3 2z"
+                  />
+                </svg>
+              </span>
+              <span class="step-badge">1</span>
+            </div>
+            <div class="card-body">
+              <h3>Let's Get In Touch</h3>
+              <p>
+                Start by reaching out through the contact page. Share your goals,
+                timeline, and ideas so we can align quickly.
+              </p>
+            </div>
+            <div class="card-divider"></div>
+            <div class="card-footer">
+              <a class="pill" href="mailto:veloradigitalservices@gmail.com"
+                >Step 1</a
+              >
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="service-card animate-on-scroll slide-right">
+            <div class="card-header">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path
+                    d="M3 5h14v2H3V5zm0 6h14v2H3v-2zm0 6h14v2H3v-2zm16.3-10.3l2 2-6.3 6.3-3-3 2-2 1 1 4.3-4.3z"
+                  />
+                </svg>
+              </span>
+              <span class="step-badge">2</span>
+            </div>
+            <div class="card-body">
+              <h3>Grab Your Designs</h3>
+              <p>
+                Tell me your unique vision, and I’ll craft stunning, functional
+                designs that align with your brand and goals.
+              </p>
+            </div>
+            <div class="card-divider"></div>
+            <div class="card-footer">
+              <a class="pill" href="mailto:veloradigitalservices@gmail.com"
+                >Step 2</a
+              >
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="service-card animate-on-scroll slide-right">
+            <div class="card-header">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path
+                    d="M7 2l1.5 4.5L13 8l-4.5 1.5L7 14l-1.5-4.5L1 8l4.5-1.5L7 2zm10 6l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3zM9 16l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2z"
+                  />
+                </svg>
+              </span>
+              <span class="step-badge">3</span>
+            </div>
+            <div class="card-body">
+              <h3>Kickstart Development</h3>
+              <p>
+                I transform your approved designs into a scalable,
+                production-ready build with clean code and best practices.
+              </p>
+            </div>
+            <div class="card-divider"></div>
+            <div class="card-footer">
+              <a class="pill" href="mailto:veloradigitalservices@gmail.com"
+                >Step 3</a
+              >
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="service-card animate-on-scroll slide-right">
+            <div class="card-header">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path
+                    d="M12 2l2 6h6l-4.9 3.6L16 18l-4-3-4 3 1-6.4L4 8h6l2-6z"
+                  />
+                </svg>
+              </span>
+              <span class="step-badge">4</span>
+            </div>
+            <div class="card-body">
+              <h3>And Hand Over</h3>
+              <p>
+                Receive a polished, fully tested product tailored to your needs,
+                plus guidance for smooth launch and upkeep.
+              </p>
+            </div>
+            <div class="card-divider"></div>
+            <div class="card-footer">
+              <a class="pill" href="mailto:veloradigitalservices@gmail.com"
+                >Step 4</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 3rem;">
+          <a
+            href="mailto:veloradigitalservices@gmail.com"
+            class="btn btn-primary"
+            >Contact Me</a
+          >
+          <a href="#projects" class="btn btn-secondary" style="margin-left: 1rem;"
+            >View Projects →</a
+          >
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Contact Information</h4>
+          <p>veloradigitalservices@email.com</p>
+          <p>+639512136957</p>
+          <p>Pasay City, Manila</p>
+          <div class="social-links">
+            <a href="https://web.facebook.com/nino.telesio" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="mailto:veloradigitalservices@email.com"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a
+              href="https://wa.me/639512136957"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services</h4>
+          <a href="#">Frontend Development</a>
+          <a href="#">UI/UX Design</a>
+          <a href="#">Web Optimization</a>
+          <a href="#">Consulting</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>Technologies</h4>
+          <p>React & Next.js</p>
+          <p>Bootstrap</p>
+          <p>Tailwind CSS</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Niño Telesio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
